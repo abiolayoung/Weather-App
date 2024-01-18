@@ -9,7 +9,7 @@ async function checkWeather(city){
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
 
     if(!searchBox.value){
-        document.querySelector(".error2").style.display = "block"
+        document.querySelector(".error2").style.display = "block";
         document.querySelector(".weather").style.display = "none";
         document.querySelector(".error1").style.display = "none";
     }
@@ -17,7 +17,7 @@ async function checkWeather(city){
     if(response.status == 404){
         document.querySelector(".error1").style.display = "block";
         document.querySelector(".weather").style.display = "none";
-        document.querySelector(".error2").style.display = "none"
+        document.querySelector(".error2").style.display = "none";
     }
     else{
         var data = await response.json();
@@ -45,7 +45,7 @@ async function checkWeather(city){
     
          document.querySelector(".weather").style.display = "block";
          document.querySelector(".error1").style.display = "none";
-         document.querySelector(".error2").style.display = "none"
+         document.querySelector(".error2").style.display = "none";
     }
 
 }
