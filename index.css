@@ -91,7 +91,7 @@ border-radius: 50%;
 .weather{
     display:none;
 }
-.error{
+.error1, .error2{
     text-align: left;
     margin-left: 10px;
     font-size: 14px;
